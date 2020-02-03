@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='calculator'>
+        <h1 class='calculator__title'>Tip calculator</h1>
+       <form class='calculator__form'>
+           <div class="calculator__field">
+               <label for='price' class='calculator__label'>Price:</label>
+               <div class='calculator__value'>
+               <input name='price' type='number' id="price" class='calculator__input' value="100" min="1"> $</div>
+               
+               </div>
+
+               <div class="calculator__field">
+                <label for='tip' class='calculator__label'>Tip:</label>
+                <div class='calculator__value'>
+                <input name='tip' type='number' id="tip" class='calculator__input' value="15" min="1"> %</div>
+         
+                </div>
+
+                <div class="calculator__field">
+                    <label for='people' class='calculator__label'>People:</label>
+                    <div class='calculator__value'>
+                    <input name='people' type='number' id="people" class='calculator__input' value="1" min="1"></div>
+                    </div>
+
+                <button class="calculator__btn" type="submit">Calculate</button>
+
+       </form>
+        <div class="error">You can use numbers bigger than 0 only</div>
+       <div class="calculator__total">Total tip is around <span class="totalNr"></span>$</div>
+       <div class="calculator__perperson">Tip per person is around <span class="perpersonNr"></span>$</div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
